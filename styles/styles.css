@@ -1,0 +1,291 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*-- Tag Selectors --*/
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-color: #000;
+    margin-bottom: 30px;
+}
+
+header li {
+    display: inline;
+    padding-right: 5px;
+    border-radius: 5px;
+    border-right: 5px solid #fff;
+    border-bottom: solid #fff 2px;
+    margin-right: 5px;
+}
+
+main img {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+nav li {
+    font-size: 24px;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+nav a, nav a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:active {
+    color: #ee2400;
+}
+
+textarea {
+    height: 100px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+
+/*-- Class Selectors --*/
+
+.hamburger {
+    display: none;
+}
+
+.welcome-div {
+    position: relative;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 300px;
+}
+
+.welcome-div section {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    text-align: center;
+    width: 50%;
+    padding-top: 30px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.flex-item h2 {
+    text-decoration: underline;
+    font-size: 54px;
+    margin-bottom: 10px;
+}
+
+.flex-item-img {
+    display: block;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flex-item p {
+    padding-right: 10px;
+    padding-left: 10px;
+    line-height: 1.5em;
+}
+
+.flex-item-icons {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.form-fields {
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.favicons {
+    padding:0;
+    text-align: center;
+    margin-top: 20px;
+}
+.favicons img{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin:5px;
+}
+
+.favicons a {
+    display: inline;
+}
+
+.mobile-nav-ul {
+    display: none;
+}
+
+
+/*-- ID Selectors --*/
+
+#wider-h1 {
+    animation-duration: 2s;
+}
+
+#nav-list {
+    animation-duration: 2s;
+}
+
+#mobile-h1 {
+    display: none;
+}
+
+#h1-name {
+    font-size: 48px;
+    display: inline;
+    font-family: 'Kalam', cursive;
+}
+
+#submit-button {
+    color: #fff;
+    font-size: 25px;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+#response-message {
+    margin-top: 20px;
+}
+
+#error-message {
+    color: #cb0b0b;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+    /*-- Tag Selectors --*/
+    header li {
+        display: block;
+        margin-bottom: 20px;
+        border-bottom: solid #fff 2px;
+    }
+
+    nav {
+        position: fixed;
+        text-align: center;
+    }
+
+    /*-- Class Selectors --*/
+
+    .welcome-div {
+        width: 100%;
+    }
+
+    .flex-item {
+        width: 100%;
+    }
+
+
+    /*-- ID Selectors --*/
+
+
+    #profile-picture {
+        order: 1;
+    }
+
+    #about {
+        order: 2;
+    }
+
+    #comp-coffee-pic {
+        order: 2;
+    }
+
+    #collaboration {
+        order: 4;
+    }
+
+    #skills-icons {
+        order: 5;
+    }
+
+    #skills {
+        order: 6;
+    }
+
+    #iphone-picture {
+        order: 7;
+    }
+
+    #philosophy {
+        order: 8;
+    }
+
+    #message-bottle {
+        order: 9;
+    }
+
+    #contact {
+        order: 10;
+    }
+    
+}
+
+@media only screen and (max-width: 430px) {
+
+    nav {
+        display: none;
+    }
+
+    #h1-name {
+        font-size: 36px;
+    }
+
+    #wider-h1 {
+        display: none;
+    }
+    
+    #mobile-h1 {
+        display: block;
+    }
+}
+
